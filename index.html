@@ -1,0 +1,574 @@
+ <!DOCTYPE html> 
+<html>
+<head>
+  <title>deepanshu web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+
+
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<body onload="myfunction()">
+   
+  <div id="loading"></div>
+  <div id="popupmain" style="display:none">
+    <div id="popup">
+      <h2 id="newsheading">Subscribe to our latest update</h2>
+      <input type="mail" name="" class="emailid" placeholder="username@gmil.com"><br>
+      <button class="submitid">Subscribe</button>
+      <button class="submitid">No-thanks</button>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg nav_style p-3 fixed-top btn-danger navbar-dark">
+    <a class="navbar-brand font-weight-bold pl-5" href="#">COVID-19</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseablenavbar">
+      <i class="fa fa-bars" style="font-size:48px;color:white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="collapseablenavbar">
+    <ul class="navbar-nav ml-auto text-center pr-5 text-capitalize">
+    <li class="nav-item">
+    <a class="nav-link text-capitalize text-light" href="#">home</a>
+    </li>
+     <li class="nav-item">
+    <a class="nav-link text-capitalize text-light" href="#aboutid">about</a>
+    </li>
+    
+    <li class="nav-item">
+    <a class="nav-link text-capitalize text-light" href="#symptomsid">symptoms</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-capitalize text-light" href="#videosid">videos</a>
+      </li>
+    <li class="nav-item">
+    <a class="nav-link text-capitalize text-light" href="#prevantionid">prevantion</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-capitalize text-light" href="#testing">testing & vaccination</a>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link text-capitalize text-light" href="#contact">contact</a>
+      </li>
+    </ul>
+    </div>
+    </nav>
+    <div class="main_header">
+      <!-- <a id="top"><p id = "arrow"></p></a>  -->
+     <div class="row w-100 h-100">
+       <div class="col-lg-5 col-md-5 col-12 order-lg-1 order-2">
+     <div class="left-side w-100 h-100 d-flex justify-content-center align-items-center">
+       <img class="responsive" class="img-fluid" src="corona.jpg" width="350" height="350" bg-info>
+     </div>
+       </div>
+        <div class="col-lg-7 col-md-7 col-12 order-lg-2 order-1">
+          <div class="right-side w-100 h-100 d-flex justify-content-center align-items-center">
+            <h1 class="text-info family">Let's stay <b>safe !</b> stay <b>allert !</b> ,and fight<br> against <b>cor<span class="corona_rot"><img src="aman.png" width="75" height="70"></span>na</b></h1>
+          </div>
+      </div>
+     </div>
+    </div>
+    <marquee  class="popup" width="100%" direction="left" height="100px">
+     <h3><i class='fa fa-exclamation-triangle' style='font-size:48px;color:red'></i><strong>"A MASK IS BETTER THAN VENTILATOR,HOME IS BETTER THAN ICU,PREVENTION IS BETTER THAN CURE,IT'S NOT CURFEW IT'S CARE FOR YOU."</strong></h3> 
+      </marquee>
+    <section class="corona-update container-fluid several">
+       <div class="mb-4">
+        <h3 class="text-center text-capitalize mb-3">COVID-19 updates</h3>
+      </div>
+<div class="row ml-5">
+<div class="deepanshu col-lg-3 col-12">
+  <i class="fas fa-hospital-alt" style="font-size:48px;color:blueviolet"></i>
+  <h1 class="count">10.7M</h1>
+  <strong>Confirmed cases</strong>
+  <p class="text-dark">Last update: 26 January 2021,<br> 07:41 pm GMT+5:30</p>
+</div>
+
+  <div class="deepanshu col-lg-3 col-12">
+    <i class="fas fa-user-md" style="font-size:48px;color:green"></i>
+  <h1 class="count">154K</h1>
+  <strong>Confirmed Deaths</strong>
+  <p class="text-dark">Last update: 26 January 2021, 07:41 pm<br> GMT+5:30</p>
+</div>
+<div class="deepanshu col-lg-3  col-12">
+  <i class="fas fa-lungs" style="font-size:48px;color:red"></i>
+  <h1 class="count">122</h1>
+  <strong>Countries, areas or territories<br> with cases</strong>
+  <p class="text-dark">Last update: 26 January 2021, 07:41 pm<br> GMT+5:30</p>
+</div>
+<div class=" deepanshu col-lg-3 col-12">
+  <i class="fas fa-plane" style="font-size:48px;color:blueviolet"></i>
+  <h1 class="count">20</h1>
+  <strong>At least 20 passengers from the UK tested positive<br> for COVID-19 on Tuesday</strong>
+  <p class="text-dark">Last update: 26 January 2021,<br> 07:41 pm GMT+5:30</p>
+</div>
+</div>
+</section>
+    <div class="container-fluid  pt-5 pb-5" id="aboutid">
+      <div class="section-header text-center mb-2 mt-2">
+        <h1 class="font-weight-bold text-danger">About COVID-19</h1>
+        <hr class="w-25 border-dark mx-auto">
+      </div> 
+      <div class="row pt-5">
+        <div class="col-lg-5 col-md-6 col-12 about--part1">
+          <img src="abc.png" class="img-fluid img">
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 p-5 about--part2">
+          <h2 class="text-danger">What is COVID-19 (corona-virus)</h2>
+          <p class="text-dark  about">First of all it's comaplsery to  know that what is the full form of <strong>COVID-19.</strong> basically, COVID-19 means  'CO' stands for corona, 'VI' for virus, and 'D' for disease. Formerly, this disease was referred to as '2019 novel coronavirus' or '2019-nCoV.covid is the vary influancing virus.t is highly unlikely that people can contract COVID-19 from food or food packaging.  </p>
+          <p class="about"> Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+            Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.</p>
+        </div>
+      </div>
+    </div>
+   <!-- //////////////////symptoms covid-19////// -->
+    <div class="container-fluid  pt-5 pb-5 hero" id="symptomsid">
+      <div class="section-header text-center mb-5 mt-5">
+        <h1 class="shukla text-info font-weight-bold">Coronavirus Symptoms</h1>
+        <hr class=" deepu2 w-25 mx-auto border-danger">
+      </div> 
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12 mt-5">
+            <figure class="text-center">
+            <img src="cough.jpg" class="img-fluid cough">
+            <figcaption class="sona1">Cough</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 mt-5">
+            <figure class="text-center">
+            <img src="nose.jpg" class="img-fluid cough">
+            <figcaption class="sona1">Runny Nosy</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 mt-5">
+            <figure class="text-center">
+            <img src="fever.webp" class="img-fluid" width="120" height="80">
+            <figcaption class="sona1">Fever</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 mt-5">
+            <figure class="text-center">
+            <img src="cold.jpg" class="img-fluid cough">
+            <figcaption class="sona1"> Feeling Cold</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 mt-5">
+            <figure class="text-center">
+            <img src="tired.jpg" class="img-fluid cough">
+            <figcaption class="sona1">Feeling Tired</figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4  col-12 mt-5">
+            <figure class="text-center">
+            <img src="breath.jpg" class="img-fluid cough">
+            <figcaption class="sona1">Breathing Problem</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ////////////videos to aware peoples about covid///// -->
+    <div class="container-fluid  pt-3  pb-5 rohit" id="videosid">
+      <div class="section-header text-center mb-5 mt-5">
+        <h1 class="text-info font-weight-bold responsive">Videos to aware peoples about COVID-19</h1>
+      </div>
+        <div class="row">
+          <div class="col-sm-4 center">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/FC4soCjxSOQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-sm-4 center">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/1APwq1df6Mw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          </div>
+          <div class="col-sm-4 center">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/Zn6ih6mWn1o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div> 
+    </div>
+     <!-- ////////////6 staps to prevantion corona///// -->
+     <div class="container-fluid  pt-3 sub-section  pb-5" id="prevantionid">
+      <div class="section-header text-center mb-5 mt-5">
+        <h1 class="text-info font-weight-bold sona2 responsive">6-Steps to prevantion aganist coronavirus</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12 mt-5">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-12 mt-2">
+                <figure>
+                  <img class="most1" src="handwash.jpg" class="img-fluid" width="90" height="90">
+                  <!-- <figcaption> feeling cold</figcaption> -->
+                  </figure>
+              </div>
+              <div class="col-lg-8 col-md-8 col-12">
+                <p class="aman">Wash your hand properly atleast 20 second,with soap and water and alcohal-based handsanitizer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 mt-5">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-12 mt-2">
+            <figure>
+              <img class="most1" src="mask.jpg" class="img-fluid" width="90" height="90">
+              <!-- <figcaption> feeling cold</figcaption> -->
+              </figure>
+          </div>
+          <div class="col-lg-8 col-md-8 col-12">
+            <p class="aman">If you want to safe covid-19 then absolutely wear mask,if you wear mask then not only you safe but also safe all persons around you.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12 mt-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12 mt-2"> 
+        <figure>
+          <img class="most1" src="keep.png" class="img-fluid" width="90" height="90">
+          <!-- <figcaption> feeling cold</figcaption> -->
+          </figure>
+      </div>
+      <div class="col-lg-8 col-md-8 col-12">
+        <p class="aman">Avoid close contact(1-meter or 3 meter)with people who are un well.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-12 mt-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-12 mt-2">
+        <figure>
+          <img class="most1" src="stay.jpg" class="img-fluid" width="90" height="90">
+          <!-- <figcaption> feeling cold</figcaption> -->
+          </figure>
+      </div>
+      <div class="col-lg-8 col-md-8 col-12">
+        <p class="aman">first of all i wanna say one think-- <strong>stay home saty safe</strong> firstly you well tyf to stay home,try to work from home</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-12 mt-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-12 mt-2">
+        <figure>
+          <img class="most1" src="5news.jpg" class="img-fluid" width="90" height="90">
+          <!-- <figcaption> feeling cold</figcaption> -->
+          </figure>
+      </div>
+      <div class="col-lg-8 col-md-8 col-12">
+        <p class="aman">stay home and watching news with family to get latest update about covid-19.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-12 mt-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-12 mt-2">
+        <figure>
+          <img src="shak.jpg" class="img-fluid" width="90" height="90">
+          <!-- <figcaption> feeling cold</figcaption> -->
+          </figure>
+      </div>
+      <div class="col-lg-8 col-md-8 col-12">
+        <p class="aman">avoide handshake to anyother evan or your family members,friends relative any one else no handshake.</p>
+      </div>
+    </div>
+  </div>
+        </div>
+      </div>
+      </div>
+    </div>
+        <!-- <h3>testing and vaccenation</h3> -->
+        <div class="container-fluid  pt-3   pb-5" id="testing">
+          <div class="section-header text-center mb-5 mt-5">
+            <h1 class="text-info font-weight-bold sona2">Testing & Vaccination</h1>
+            <hr class="w-25 mx-auto border-danger">
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-12">
+         <h4 class="lab"><i class="fa fa-hospital-o" style="font-size:25px;color:rgb(0, 119, 255)"></i> CSIR-CDRI(research-institute)</h4> <br>
+      <h5><i class='fas fa-exclamation-triangle' style='font-size:20px;color:red'></i> covid-19 testing lab</h5>
+         <span>Research institute</span><br>
+         <ul>
+           <li>Referral required</li>
+           <li>Tests limitedto certain patients </li>
+         </ul>
+         <strong> <i class="fa fa-map-marker" style="font-size:30px;color:rgb(0, 174, 255)"></i> Lucknow,Uttar Pradesh, Sitapur Road,Jankipuram Sector 10.</strong><br>
+         <a href="https://www.google.com/maps/place/CSIR-CDRI/@26.9467067,80.9314531,17z/data=!3m1!4b1!4m5!3m4!1s0x399956e663a160b1:0xfe03fe5ee4f3c00e!8m2!3d26.9467067!4d80.9336418">
+          <button class="btn btn-info mt-3"> go live</button>
+        </a>
+      
+            <h4 class="mt-3"><i class="fa fa-phone" style="font-size:30px;color:rgb(0, 162, 255)"></i>  Call</h4>
+            </div>
+            <div class="col-lg-3 col-12">
+        
+             <h4 class="lab"><i class="fa fa-hospital-o" style="font-size:25px;color:rgb(0, 119, 255)"></i> Chandan Speciality Lab</h4> <br>
+             <h5><i class='fas fa-exclamation-triangle' style='font-size:20px;color:red'></i> Medical Laboratory</h5>
+                <span>Research institute</span><br>
+                <ul>
+                  <li>Referral required</li>
+                  <li>Tests limitedto certain patients </li>
+                </ul>
+                <strong> <i class="fa fa-map-marker" style="font-size:30px;color:rgb(0, 174, 255)"></i> Lucknow,Uttar Pradesh,Jankipuram Biotech park.</strong><br>
+                <a href="https://www.google.com/maps/place/Chandan+Speciality+Lab/@26.911762,80.9552403,17z/data=!3m1!4b1!4m5!3m4!1s0x399957b96fd36cbf:0x1d48bfce4932ed52!8m2!3d26.911762!4d80.957429">
+                 <button class="btn btn-info mt-5"> go live</button>
+               </a>
+             
+                   <h4 class="mt-3"><i class="fa fa-phone" style="font-size:30px;color:rgb(0, 162, 255)"></i>  Call</h4>
+            </div>
+            <div class="col-lg-3 col-12">
+              <h4 class="lab"><i class="fa fa-hospital-o" style="font-size:25px;color:rgb(0, 119, 255)"></i> IPSUM DIAGNOSTIC CENTER(research-institute)</h4> <br>
+      <h5><i class='fas fa-exclamation-triangle' style='font-size:20px;color:red'></i> covid-19 testing lab</h5>
+         <span>Research institute</span><br>
+         <ul>
+           <li>Referral required</li>
+           <li>Tests limitedto certain patients </li>
+         </ul>
+         <strong> <i class="fa fa-map-marker" style="font-size:30px;color:rgb(0, 174, 255)"></i> Lucknow,Uttar Pradesh,purania Flyover,sector A.</strong><br>
+         <a href="https://www.google.com/maps/place/IPSUM+DIAGNOSTIC+CENTRE/@26.8991585,80.9364453,17z/data=!3m1!4b1!4m5!3m4!1s0x3999562e1c2ae069:0x26a18c467dd5a60e!8m2!3d26.8991585!4d80.938634">
+          <button class="btn btn-info mt-3"> go live</button>
+        </a>
+      
+            <h4 class="mt-3"><i class="fa fa-phone" style="font-size:30px;color:rgb(0, 162, 255)"></i>  Call</h4>
+           
+            </div>
+            <div class="col-lg-3 col-12">
+             
+              <h4 class="lab"><i class="fa fa-hospital-o" style="font-size:25px;color:rgb(0, 119, 255)"></i> Helix Diagnostic Lab(research-center)</h4> <br>
+              <h5><i class='fas fa-exclamation-triangle' style='font-size:20px;color:red'></i> covid-19 testing lab</h5>
+                 <span>Research institute</span><br>
+                 <ul>
+                   <li>Referral required</li>
+                   <li>Tests limitedto certain patients </li>
+                 </ul>
+              <strong> <i class="fa fa-map-marker" style="font-size:30px;color:rgb(0, 174, 255)"></i> Lucknow,Uttar Pradesh,Ekta vihar,purania,sector E</strong><br>
+                 <a href="https://www.google.com/maps/place/Helix+Diagnostic+Labs/@26.8892713,80.9387953,17z/data=!3m1!4b1!4m5!3m4!1s0x3999562c919fb6d1:0x798ee72359c92742!8m2!3d26.8892713!4d80.940984">
+                  <button class="btn btn-info mt-3"> go live</button>
+                </a>
+              
+                    <h4 class="mt-3"><i class="fa fa-phone" style="font-size:30px;color:rgb(0, 162, 255)"></i>  Call</h4>
+            </div>
+          </div>
+          </div>
+   
+    <section class="new-varient">
+      <div class="container-fluid  pt-3 new-section  pb-5">
+        <div class="section-header text-center mb-5 mt-5">
+          <h1 class="text-info font-weight-bold">New-Varient</h1>
+          <hr class="w-25 mx-auto border-danger">
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-12">
+  <img  class="varient" src="school.gif" class="img-fluid">
+          </div>
+          <div class="col-lg-6 col-12">
+            <h3>New COVID-19 Variants</h3>
+            <p class="about">Information about the characteristics of these variants is rapidly emerging. Scientists are working to learn more about how easily they might spread, whether they could cause more severe illness, and whether currently authorized vaccines will protect people against them. Currently, there is no evidence that these variants cause more severe illness or increased risk of death.</p>
+            <h4>What we do not know</h4>
+            <ul class="about">
+              <li>How widely these new variants have spread</li>
+              <li>How the new variants differ</li>
+              <li>How the disease caused by these new variants differs from the disease caused by other variants that are currently circulating</li>
+            </ul>
+            <a href="https://timesofindia.indiatimes.com/world/us/moderna-says-its-covid-19-vaccine-demonstrates-neutralising-impact-on-new-variants/articleshow/80462149.cms">
+            <button class="btn btn-info">know more</button>
+            </a>
+          </div>
+        </div>
+        </div>
+    </section>
+    <section class="news">
+      <div class="container-fluid">
+        <h2 class="text-danger ml-3 mb-3 MT-2">GO LIVE NEWSES ABOUT COVID-19</h2>
+        <hr class="border-dark">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-12">
+            <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019?gclid=Cj0KCQiAlsv_BRDtARIsAHMGVSZ2zWli307grprWybjkFBCNGcoh8MUr0qyDpwl8HlL7ptCzahthhRoaApMvEALw_wcB">
+       <img src="seek.jpg" class="img-fluid">
+       <span> 23 December 2020</span><br>
+       <h4>In Middle East COVID-19 hotspot Iran, WHO walks the talk</h4>
+       </a>
+          </div>
+          <div class="col-lg-3 col-md-3 col-12">
+            <a href="https://timesofindia.indiatimes.com/india/coronavirus-cases-and-covid-19-vaccine-news-live-updates/liveblog/80125260.cms">
+            <img src="nurse.jpg" class="img-fluid">
+            <span> 23 December 2020</span><br>
+            <h4> Migrants and refugees say COVID-19 has dramatically worsened their lives</h4>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-3 col-12">
+            <a href="https://edition.cnn.com/2021/01/06/health/us-coronavirus-wednesday/index.html">
+            <img src="lady.jpg" class="img-fluid">
+            <span> 18 December 2020</span><br>
+            <h4> Partner highlights: Syrian refugee carries on family soap-making legacy to combat COVID-19 spread in Lebanon</h4>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-3 col-12">
+            <a href="https://www.news18.com/news/india/coronavirus-news-live-updates-who-warns-of-hard-road-ahead-to-beat-pandemic-china-reports-biggest-rise-in-daily-covid-19-cases-in-5-months-3255449.html"> <img src="girl.jpg" class="img-fluid">
+            <span> 18 December 2020</span><br>
+           <h4>Donors back WHO’s diverse fight against the shifting COVID-19 pandemic all over the world</h4>
+           </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contect mt-5">
+      <h1 id="contact">Contact me</h1>
+      <hr class="w-25 mx-auto border-dark">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-12">
+        <h3>Get in touch</h3>
+       <p class="text-danger">HELLO DEAR FRIENDS,IF HAVE YOU NEAREST PLACE, ANY COVID-19 POSITIVE CASES ANY  PERSON HAVE ANY SYMPTOMS IN COVID,THEN PLEASE
+        CONTACT ME AS SOON AS POSSIBLE .AND FINALLY ONCE AGAIN , SAY  STAY HOME STAY SAFE .</p>
+        <ul>
+         <li>
+          <i class='fa fa-user' style='font-size:30px;color:red'></i>      <strong>name:</strong> 
+                       <p>deepanshu shukla</p>
+          </li>
+          <li>
+            <i class='fa fa-map-marker' style='font-size:30px;color:red'></i>      <strong>address:</strong>
+            <p>mirzapur,up</p>
+          </li>
+          <li>
+            <i class='fa fa-envelope' style='font-size:30px;color:red'></i>   <strong>email:</strong>
+            <p>shukladeepanshu903@gmail.com</p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-md-6 col-12">
+         <h3>Message me</h3> 
+         <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1"><strong> your name:</strong>     </label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1"><strong>Email:</strong>  </label>
+            <input type="email" class="form-control" id="exampleInputPassword1" placeholder="enter you email">
+          </div> 
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+    </section>
+    <footer class="page-footer bg-success">
+      <div class="several">
+        <div class="container">
+          <div class="row py-4 d-flex align-items-center">
+            <div class="col-md-12 text-center">
+              <a href="https://www.facebook.com/deepanshu.shukla.50596"><i class="fa fa-facebook mr-4" style="font-size:30px;color:#426782"></i></a>
+             <a href="prajapati_dheeraj9580"><i class="fa fa-instagram mr-4" style="font-size:30px;color:#8a3ab9"></i></a>
+             <a href="https://www.linkedin.com/in/deepanshu-shukla-b29840196"><i class="fa fa-linkedin mr-4" style="font-size:30px;color: #0e76a8"></i></a>
+             <a href="#"><i class="fa fa-twitter mr-4" style="font-size:30px;color:#1DA1F2"></i></a>
+            <a href="#"><i class="fa fa-google-plus mr-4" style="font-size:30px;color:#db4a39"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center text-md-left mt-5">
+       <div class="row">
+         <div class="col-md-3 mx-auto mb-4">
+           <h6 class="text-uppercase font-weight-bold">covid-19 info</h6>
+           <hr class="bg-dark mb-4 mt-0 d-inline-block mx-auto" style="width:125px;height:2px">
+           <p class="text-light">Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+           Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.</p>
+         </div>
+ <div class="col-md-2 mx-auto mb-4">
+           <h6 class="text-uppercase font-weight-bold">what we do</h6>
+           <hr class="bg-dark mb-4 mt-0 d-inline-block mx-auto" style="width:125px;height:2px">
+    <ul class="list-unstyled">
+      <li class="my-2"><a class="sona" href="#">web desigener</a></li>
+      <li class="my-2"><a class="sona" href="#"><span>wordpress developer</span></a></li>
+      <li class="my-2"><a class="sona" href="#">bloger</a></li>
+      <li class="my-2"><a  class="sona" href="#">Andriod developer</a></li>
+    </ul>
+         </div>
+         <div class="col-md-2 mx-auto mb-4">
+          <h6 class="text-uppercase font-weight-bold">regions</h6>
+          <hr class="bg-dark mb-4 mt-0 d-inline-block mx-auto" style="width:125px;height:2px">
+          <ul class="list-unstyled">
+            <li class="my-2"><a class="sona" href="https://www.google.com/search?rlz=1C1CHZL_enSA844IN849&q=china+wuhan+covid+cases&spell=1&sa=X&ved=2ahUKEwj_0JiWq8buAhXW8XMBHWEUDkkQBSgAegQIIBAw&biw=1366&bih=625">china</a></li>
+            <li class="my-2"><a class="sona" href="#">africa</a></li>
+            <li class="my-2"><a class="sona" href="#">americas</a></li>
+            <li class="my-2"><a class="sona" href="#">south east-asia</a></li>
+            <li class="my-2"><a class="sona" href="#">europe</a></li>
+          </ul>
+          </div>
+
+          <div class="col-md-3 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">contact</h6>
+            <hr class="bg-dark mb-4 mt-0 d-inline-block mx-auto" style="width:75px;height:2px">
+            <ul class="list-unstyled text-light">
+              <li class="my-2"><i class="fa fa-home mr-3 fa-2x"></i> mirzapur uttat pradesh</li>
+              <li class="my-2"><i class="fa fa-envelope mr-3 fa-2x"></i> shukladeepanshu903@gmail.com</li>
+              <li class="my-2"><i class="fa fa-phone mr-3 fa-2x"></i>  9695838345,6388771274</li>
+              <li class="my-2"><i class="fa fa-print mr-3 fa-2x"></i>  +00009kd459d</li>
+            </div>
+  
+       </div>
+      </div>
+      <div class="footer-colyright several text-center py-3">
+        <p>&copy;copyright
+          <a class="text-danger" href="file:///C:/Users/DEEPU/Desktop/student/index.html">deepanshushukla.com</a> </p>
+          <p>Designed by <strong>DEEPANSHU SHUKLA</strong></p>
+      </div>
+    
+    </footer>
+    <!-- <script src="skrollr.js"></script> -->
+      <!-- <script src="jquery-3.5.1.min.js"></script>   -->
+    <script type ="text/javascript">
+    //     $(window).scroll(function(){
+    //       if($(window).scrollTop()> 500)
+    //       {
+    //         $("a").fadeIn();
+    //      }
+    //      else{
+    //        $("a").fadeOut();
+    //      }
+    // })
+    //     $("a").click(function()
+    //     {
+    //     $("html").animate({scrollTop:0},2000);
+      
+    //     });
+      
+      var preloader = document.getElementById('loading');
+      function myfunction(){
+             preloader.style.display='none';
+      }
+       $(document).ready(function(){
+     
+
+
+        setTimeout(function(){
+      $('#popupmain').css('display','block');
+      },10000)
+      });
+      $('.submitid').click(function(){
+        $('#popupmain').css('display','none');
+       
+      });
+      
+
+     
+    
+    </script>
+  </body>
+</html>
